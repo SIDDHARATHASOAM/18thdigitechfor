@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validate.js"></script>
+</head>
+
+<body class="backgroud">
+    <div class="backgroud"></div>
+
+    <h1> Enter your details.</h1> <br>
+    <hr class="hr-line">
+
+    <form name="user-details" onsubmit="return validateForm()" action="action.php">
+        <div class="astric-msg"><span class="astric">*</span>fields are required</div>
+        <label for="fname" class="lable-tag">First name: <span class="astric">*</span></label><br>
+
+        <input type="text" id="first-name" placeholder="Enter your First name" name="fname" required
+            class="input-section" pattern="([A-Za-z]).{3,}"><br>
+
+        <label for="lname" class="lable-tag">Last name:<span class="astric">*</span></label><br>
+        <input type="text" id="last-name" placeholder="Enter your Last name" name="lname" pattern="([A-Za-z]).{1,}"
+            class="input-section"><br>
+
+        <label for="uemail" class="lable-tag">@E-mail:<span class="astric">*</span></label><br>
+        <input type="email" id="user-email" placeholder="abc@xyz.com" name="uemail" class="input-section" required><br>
+
+        <label for="contact-number" class="lable-tag">Contact Number:<span class="astric">*</span></label><br>
+        <input type="number" id="usernumber" placeholder="Enter your Contact Number" required name="contact-number"
+            pattern="([0-9].{10})" class="input-section"><br>
+
+        <label for="fname" class="lable-tag">Select your gender:</label><br>
+        <div class="margin-radio">
+            <input type="radio" id="Male" class="lable-tag" class="padding-radio" name="gender" value="Male">
+            <label for="Male">Male</label><br>
+            <input type="radio" id="Female" class="lable-tag" class="padding-radio" name="gender" value="Female">
+            <label for="Female">Female</label><br>
+            <input type="radio" id="other" class="padding-radio" class="lable-tag" class="padding-radio" name="gender"
+                value="other">
+            <label for="other">other</label><br>
+
+
+        </div>
+
+        <label for="interest" class="lable-tag">Select your vehicles:<span class="astric">* Select atleast one.</span></label>
+        <div class="margin-radio">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br>
+        </div>
+
+
+        <label for="Country" class="lable-tag">Select Your Country:<span class="astric">*</span></label>
+        <select id="Country" class="input-section" name="Country" required>
+            <option value="India" >India</option>
+            <option value="America">America</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Australia">Australia</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Bhutan">Bhutan</option>
+            <option value="Bangladesh">Bangladesh</option>
+        </select><br>
+
+        <label for="img" class="lable-tag">Upload your image:</label> <br>
+        <input type="file" class="input-section" name="img" accept="image/*" required><br><br>
+
+        <label for="describe" class="lable-tag">Describe yourself:<span class="astric">*</span> </label><br>
+        <textarea id="describe" placeholder="eg: I'm a software Devlopper." name="describe"
+            class="input-section" required></textarea><br>
+
+
+        <label for="password" class="lable-tag">Password:<span class="astric">*</span></label><br>
+        <input type="password" id="password"
+            placeholder="Password contain 6 to 10 digit with atleast 1 character and 1 number "
+            title="Password lenght should be 6 to 10  with atleast 1 character and 1 number " name="password"
+            class="input-section" required pattern="(?=.*[a-z])(?=.*[A-Z]).{6,10}"><br>
+
+        <label for="confirmpassword" class="lable-tag">Confirm Password:<span class="astric">*</span></label><br>
+        <input type="password" id="confirmpassword" placeholder="Confirm password " name="confirm-password"
+        
+            title="Password lenght should be 6 to 10  with atleast 1 character and 1 number "
+            pattern="(?=.*[a-z])(?=.*[A-Z]).{6,10}" class="input-section"><br> <br>
+
+
+        <div class="button-style">
+
+            <button type="submit" class="button-submit">Submit</button>
+            <button type="reset" class="button-reset">Reset</button>
+
+
+        </div>
+
+
+
+    </form>
+
+    <script src="/js/validate.js"></script>
+
+</body>
+
+</html>

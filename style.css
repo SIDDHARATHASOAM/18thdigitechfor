@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-size: 3vh;
+}
+body h1{
+    text-align: center;
+    font-size: 6vh;
+}
+body{
+   
+    width: 70%;
+    margin: 2% auto;
+    /* background: url(/IMG/annie-spratt-wuc-KEIBrdE-unsplash.jpg); */
+    background-color: rgb(133 133 133 / 37%);
+    border: 18px solid rgb(4 131 157);
+    border-radius: 100px;
+    padding-bottom: 7%;
+    padding-top: 2%;
+    background-position: center;
+    
+}
+.background{
+opacity: 0.5%;
+width: 80%;
+padding: 80%;
+}
+.input-section{
+    border:0.4vw  solid rgb(63 156 239);
+    width: 80%;
+    border-radius: 9px;
+    padding: 10px;
+    margin-left:2vw ;
+   
+}
+.lable-tag{
+    padding-left: 2vw;
+    font-size: 4vh;
+  
+    
+}
+.hr-line{
+    margin-bottom: 3vh;
+}
+.button-submit{
+    color: rgb(237 237 237);
+    text-decoration: none;
+    padding: 2% 8%;
+    background-color: rgb(207 27 27);
+    border-radius: 20px;
+    margin: 0% 0% 0% 21%;
+    float: left;
+    font-size: 1.5rem;
+    
+}
+.button-submit:hover{
+    color: rgb(207 27 27) ;
+    text-decoration: none;
+    padding: 2% 8%;
+    background-color: rgb(237 237 237);
+    border-radius: 20px;
+    margin: 0% 0% 0% 21%;
+    float: left;
+    font-size: 1.5rem;
+
+}
+.button-style{
+    width: 100%;
+}
+.button-reset{
+    color: rgb(237 237 237);
+    text-decoration: none;
+    padding: 2% 8%;
+    background-color: rgb(207 27 27);
+    border-radius: 20px;
+    margin: 0% 0% 0% 5%;
+    float: left;
+    font-size: 1.5rem;
+
+}
+.padding-radio{
+    padding-left: 2vw !important;
+}
+.astric{
+    color: red;
+}
+.astric-msg{
+    font-size: 1rem;
+    color: grey;
+    float: right;
+    margin-right: 20%;
+}
+.margin-radio{
+    margin-left: 4%;
+    font-size: 3vh;
+}
+
+
